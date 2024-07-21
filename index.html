@@ -1,11 +1,96 @@
+<!-- https://getbootstrap.com/docs/5.0/examples/heroes/ -->
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="device-width, initial-scale=1.0" />
-    <title>Integration between GNUHealth and Orthanc</title>
+    <meta
+      name="viewport"
+      content="device-width, initial-scale=1.0"
+    />
+    <meta name="author" content="Wei Zhao" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <title>Virtual Hospital Project at UCLouvain/EPL</title>
+
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="css/heroes.css" rel="stylesheet" />
   </head>
+
   <body>
-    <h1>Main page integration</h1>
-    <a href="/contact.html"></a>
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 img-fluid" src="images/UCLouvain Ecole Polytechnique de Louvain.svg" alt="Virtual Hospital logo">
+        <h1 class="display-5 fw-bold">Virtual Hospital Project at UCLouvain/EPL</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            <b>About virtual hospital Project</b>
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="https://uclouvain.be/" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 gap-3">About UCLouvain</a>
+            <a href="https://uclouvain.be/fr/facultes/epl" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 gap-3">About EPL</a>
+            <a href="https://www.uclouvain.be/icteam" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3">About ICTEAM</a>
+            <a href="https://uclouvain.be/en/research-institutes/icteam/ingi" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3">About INGI</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="px-4 pt-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 img-fluid" src="images/opensource.png" alt="open-source logo"  width="150" height="150">
+        <h1 class="display-5 fw-bold">Collaborative Open Source Application</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4"></p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="gnuHealthOrthanc.html" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3">Integration Orthanc and GNUHealth</a>
+            <a href="404.html" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3">Integration Orthanc and OpenMRS</a>
+            <a href="404.html" target="_blank" type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3">Orthanc In PARROT</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="b-example-divider"></div>
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <a name="references"></a>
+        <h1 class="display-5 fw-bold text-center">Virtual Hospital Platform</h1>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">The platform for medical informatics education</h2>
+            <p class="fs-5 col-lg-10"> Explain the system</p>
+            <a href="404.html" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">Download</a>
+            <a href="ongoing.html" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">In Progress</a>
+            <a href="404.html" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="https://doi.org/10.1007/s10278-018-0082-y" target="_blank">
+              <img class="d-block mx-auto mb-4 img-fluid" src="images/ongoing.png" width="100" height="100">
+            </a>
+          </div>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+          <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Partner</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-4">The Virtual Hospital Platform offers a comprehensive suite of open source medical applications, positioning it as an ideal resource for medical informatics education and continuing medical education.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button href="https://www.gnuhealth.org/" type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">GNUHealth</button>
+                <button href="https://openmrs.org/" type="button" class="btn btn-outline-light btn-lg px-4">OpenMRS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-example-divider mb-0"></div>
+
+    </main>
+      <script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>
 </html>
