@@ -1,0 +1,226 @@
+<!-- https://getbootstrap.com/docs/5.0/examples/heroes/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wei Zhao" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <title>Orthanc and GNUHealth</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/Orthanc.ico" />
+    <link href="css/heroes.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <img
+          class="d-block mx-auto mb-4 img-fluid"
+          src="images/orthancGnuHealth.png"
+          alt="GNUHealth Orthanc logo"
+          width="600"
+        />
+        <h1 class="display-5 fw-bold">Connecting GNUHealth and Orthanc</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            The aim of this project is to connect the PACS Orthanc server to GNU
+            Health, allowing GNU Health to access patient radiology data. A new
+            module has been developed to configure the connection and to manage
+            DICOM image data. Since GNU Health and Orthanc have different
+            representations of patients, the module provides a mapping that
+            links GNU Health patient identities with Orthanc data records.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              href="https://www.gnuhealth.org/"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary btn-lg px-4 gap-3"
+              >About GNUHealth</a
+            >
+            <a
+              href="https://orthanc.uclouvain.be/"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary btn-lg px-4 gap-3"
+              >About Orthanc</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <a name="module"></a>
+        <h1 class="display-5 fw-bold text-center">Main Module</h1>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Orthanc in GNUHealth system</h2>
+            <p class="fs-5 col-lg-10">
+              The Orthanc ecosystem extends the GNU Health System with advanced
+              image handling capabilities directly accessible from the
+              electronic health record. The new radiology module includes two
+              main functions: 1) image data management, which allows uploading,
+              updating and viewing of patient images, and 2) Orthanc server
+              configuration, which allows connecting to Orthanc.
+            </p>
+            <p>
+              A pre-configured virtual machine (VM) for testing is available. To
+              request access, please contact us by email at
+              <a href="mailto: wei.zhao@uclouvain.be">wei.zhao@uclouvain.be</a>
+            </p>
+            <p>
+              Do you want to tell us about your experience with the new module?
+              Please consider filling the test form:
+              <a
+                href="https://my.liberaforms.org/form/312"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GNU Health and Orthanc Integration Test</a
+              >.
+            </p>
+            <a
+              href="docs/gnuhealthradiology.pdf"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
+            <a
+              href="https://youtu.be/wL8MbM8iu8A"
+              target="_blank"
+              type="button"
+              class="btn btn-primary px-4 me-md-2"
+              >Video</a
+            >
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="docs/gnuhealthradiology.pdf#page=11" target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/integrationGNUHealth_Orthanc_design.png"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="docs/gnuhealthradiology.pdf#page=13" target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/orthanc-config.png"
+              />
+            </a>
+          </div>
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Orthanc Server Configuration</h2>
+            <p class="fs-5 col-lg-10">
+              The purpose of this submodule is to establish a connection between
+              the Orthanc server and GNU Health.
+            </p>
+            <a
+              href="docs/gnuhealthradiology.pdf#page=15"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
+          </div>
+        </div>
+
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Radiology</h2>
+            <p class="fs-5 col-lg-10">
+              This is the core of the Orthanc integration, designed for
+              uploading, updating, and viewing patient images using DICOM
+              viewers available for Orthanc. A synchronization function shows
+              the studies stored in the Orthanc database in the GNU Health.
+              Image data can be uploaded to the Orthanc server directly from the
+              GNU Health client.
+            </p>
+            <a
+              href="docs/gnuhealthradiology.pdf#page=11"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="docs/gnuhealthradiology.pdf#page=18" target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/Integration_result.png"
+              />
+            </a>
+          </div>
+
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-md-10 mx-auto col-lg-5">
+              <a target="_blank">
+                <img
+                  class="d-block mx-auto mb-4 img-fluid"
+                  src="images/futuretasks.png"
+                  width="120"
+                  height="120"
+                />
+              </a>
+            </div>
+            <div class="col-lg-7 text-center text-lg-start">
+              <h2 class="fw-bold lh-1 mb-3">Future Work</h2>
+              <p class="fs-5 col-lg-10">
+                There are several tasks left as future work, such as image
+                segmentation and dose calculation.
+              </p>
+              <a
+                href=""
+                target="_blank"
+                type="button"
+                class="btn btn-outline-primary px-4 me-md-2"
+                >Documentation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <a name="references"></a>
+        <h1 class="display-5 fw-bold text-center">Educational Purpose</h1>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <!-- <h2 class="fw-bold lh-1 mb-3">Improvement of Image Segmentation</h2> -->
+            <!-- <p class="fs-5 col-lg-10">XXXX</p> -->
+            <a
+              href=""
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/ongoing.png"
+                width="100"
+                height="100"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

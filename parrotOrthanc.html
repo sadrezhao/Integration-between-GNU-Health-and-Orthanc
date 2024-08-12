@@ -1,0 +1,134 @@
+<!-- https://getbootstrap.com/docs/5.0/examples/heroes/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Wei Zhao" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <title>Orthanc and PARROT</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/Orthanc.ico" />
+    <link href="css/heroes.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <img
+          class="d-block mx-auto mb-4 img-fluid"
+          src="images/parrotOrthanc.png"
+          alt="parrot orthanc logo"
+          width="550"
+          height="280"
+        />
+        <h1 class="display-5 fw-bold">Orthanc in PARROT</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">PARROT (Platform for Artificial Intelligence Guided Radiation Oncology Therapy) is an open-source, web-based platform aims to improve therapeutic decision-making through advanced AI techniques. Its goals are to facilitate the visualization of AI model outputs, to use contour editing tools to modify AI segmentation models, and to support decision making between XT and PT plans. It is also able to store and visualize step-by-step modifications of AI segmentation, manage patient and associated image data, and export or import those information. PARROT uses Orthanc to store image data and the modification history.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              href="https://huggingface.co/spaces/AI4MIRO/parrot.ai"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary btn-lg px-4 gap-3"
+              >About PARROT</a
+            >
+            <a
+              href="https://orthanc.uclouvain.be/"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary btn-lg px-4 gap-3"
+              >About Orthanc</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <a name="references"></a>
+        <h1 class="display-5 fw-bold text-center">PARROT</h1>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Architecture</h2>
+            <p class="fs-5 col-lg-10">We use nginx to deliver the web application and to connect the web frontend to two back-end servers: 1) The AI server for segmentation and dose prediction, and the 2) Orthanc server for data storage. The AI server can run different built-in and user-provided AI models. The web application with the user interface consists of six modules: Patient Management, Study Management, AI Model Management, Patient Modeling, Plan Evaluation, and AI Marketplace.</p>
+            <a href="https://huggingface.co/spaces/AI4MIRO/parrot.ai" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">Download</a>
+            <a href="https://youtu.be/1YO3PYhbvzs" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">Video</a>
+            <a href="https://ai4miro-parrot-ai.static.hf.space/documentation.html#" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img class="d-block mx-auto mb-4 img-fluid" src="images/parrot_architecture.png">
+            </a>
+          </div>
+        </div>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img class="d-block mx-auto mb-4 img-fluid" src="images/parrot.png">
+            </a>
+          </div>
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Components</h2>
+            <p class="fs-5 col-lg-10">The web-based user interface consists of six components: Patient Management, Study Management, AI Model Management, Patient Modeling, Plan Evaluation, and AI Marketplace. The front end includes a data browser and manager, a Multi-Planar Reconstruction (MPR) viewer for visualizing image studies and displaying and comparing model results, and an AI manager for configuring and running AI models.</p>
+            <a href="https://ai4miro-parrot-ai.static.hf.space/documentation.html#" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
+          </div>
+        </div>
+
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Editing image segmentation</h2>
+            <p class="fs-5 col-lg-10">The predicted output of the AI model has a bias that can be corrected through the user interface. PARROT stores the step-by-step modification history of the image segmentation on Orthanc. This modification history can be exported or imported together with the modified image data.</p>
+            <a href="https://ai4miro-parrot-ai.static.hf.space/documentation.html#" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img class="d-block mx-auto mb-4 img-fluid" src="images/parront_modificationSegmentation.png">
+            </a>
+          </div>
+        </div>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img class="d-block mx-auto mb-4 img-fluid" src="images/parront_planEvaluation.png">
+            </a>
+          </div>
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Segmentation and treatment plan evaluation</h2>
+            <p class="fs-5 col-lg-10">The results of the AI prediction can be inspected in the Patient Modeling and Plan Evaluation view. Users can view different modalities of image data (CT, MRI), structure sets (RTSTRUCT), and radiation treatment planning (RTDOSE), the latter two either from uploaded DICOM files or predicted by AI models. PARROT provides tools to compare contours and treatment plans, visualize the differences, and evaluate the results. Users can provide clinical goals.</p>
+            <a href="https://ai4miro-parrot-ai.static.hf.space/documentation.html#" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
+          </div>
+        </div>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Future Work</h2>
+            <p class="fs-5 col-lg-10">
+              Several tasks remain as future work, including 3D image data visualization, integration with OpenTPS, and the extension of the tool for radiology education, etc.
+            </p>
+            <a
+              href=""
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/futuretasks.png"
+                width="120"
+                height="120"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    <script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
