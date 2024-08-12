@@ -1,8 +1,8 @@
 .. _gnuHealth_orthanc_in_one_system:
 
 
-Integration of the DICOM server Orthanc into the HIS GNU Health in one system 
-==============================================================================
+Integration with GNU Health
+===========================
 
 
 Description
