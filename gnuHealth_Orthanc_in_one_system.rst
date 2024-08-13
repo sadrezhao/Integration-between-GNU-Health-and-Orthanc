@@ -98,4 +98,4 @@ Installation
 .. rubric:: Footnotes
 .. [#f1] https://docs.gnuhealth.org/ansible/examples/gnuhealth_server_and_client.html
 .. [#f2] https://foss.heptapod.net/tryton/tryton/-/tree/branch/default/sao
-.. [#f3] https://www.youtube.com/watch?v=wL8MbM8iu8A
+.. [#f3] https://www.youtube.com/watch?v=bYODXdy25l8
