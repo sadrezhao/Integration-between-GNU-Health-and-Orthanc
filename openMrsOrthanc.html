@@ -26,7 +26,16 @@
         />
         <h1 class="display-5 fw-bold">Connecting Orthanc and OpenMRS</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">The aim of this project is to provide a seamless integration between OpenMRS and an Orthanc PACS system, enabling the processing of medical imaging data in DICOM format. With this connection, OpenMRS will use the Stone and OHIF DICOM viewers to visualise patient image data. The connection leverages the OpenMRS FHIR server, as well as Orthanc's FHIR resources, ensuring robust compatibility. The implementation follows the IHE standard, ensuring compliance with industry best practices.</p>
+          <p class="lead mb-4">
+            The aim of this project is to provide a seamless integration between
+            OpenMRS and an Orthanc PACS system, enabling the processing of
+            medical imaging data in DICOM format. With this connection, OpenMRS
+            will use the Stone and OHIF DICOM viewers to visualise patient image
+            data. The connection leverages the OpenMRS FHIR server, as well as
+            Orthanc's FHIR resources, ensuring robust compatibility. The
+            implementation follows the IHE standard, ensuring compliance with
+            industry best practices.
+          </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <a
               href="https://openmrs.org//"
@@ -40,7 +49,8 @@
               target="_blank"
               type="button"
               class="btn btn-outline-primary btn-lg px-4 gap-3"
-              >About Orthanc</a>
+              >About Orthanc</a
+            >
           </div>
         </div>
       </div>
@@ -51,30 +61,74 @@
         <h1 class="display-5 fw-bold text-center">Main module</h1>
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
-            <h2 class="fw-bold lh-1 mb-3">Orthanc in OpenMRS system</h2>
-            <p class="fs-5 col-lg-10">Orthanc's embedding approach in the OpenMRS system</p>
-            <a href="docs/openMrsOrthanc.pdf" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
+            <h2 class="fw-bold lh-1 mb-3">Radiology Module</h2>
+            <p class="fs-5 col-lg-10">
+              We are planning to develop this project to create a new radiology
+              module within the OpenMRS electronic healthcare system. This
+              module aims to streamline the management of imaging data and
+              support key workflows in radiology departments. key workflows in
+              radiology departments. Key features of this module include:
+            </p>
+            <ul>
+              <li>
+                FHIR ImagingStudy Resource integration: Implement the FHIR
+                ImagingStudy resource to standardise and expose imaging data via
+                OpenMRS' FHIR server, ensuring interoperability and compliance
+                with healthcare standards.
+              </li>
+              <li>
+                PACS connectivity: Enable seamless integration with Orthanc PACS
+                through the configuration support for both local and remote
+                connections, facilitating access to imaging systems.
+              </li>
+              <li>
+                Visualisation of patient image data: View patient image data
+                using Orthanc's DICOM viewers, providing an interface for image
+                preview.
+              </li>
+              <li>
+                Worklist Management in OpenMRS: manage worklist directly within
+                OpenMRS, improving workflow efficiency and coordination across
+                healthcare teams.
+              </li>
+            </ul>
+            <p class="fs-5 col-lg-10">
+              This initiative is designed to improve the efficiency of radiology
+              operations and provide healthcare providers with tools to manage
+              imaging data. Stay tuned for updates as we develop this critical
+              functionality!
+            </p>
+            <a
+              href="docs/openMrsOrthanc.pdf"
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
             <!-- <a href="" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">Video</a> -->
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
             <a href="" target="_blank">
-              <img class="d-block mx-auto mb-4 img-fluid" src="images/openMrsOrthanc.png">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/ongoing.png"
+              />
             </a>
           </div>
         </div>
       </div>
-    <div class="b-example-divider"></div>
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      <a name="references"></a>
-      <h1 class="display-5 fw-bold text-center">Master Medical Informatics with OpenMRS</h1>
-      <div class="row align-items-center g-lg-5 py-5">
+      <div class="b-example-divider"></div>
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <a name="references"></a>
+        <h1 class="display-5 fw-bold text-center">OpenMRS on the Virtual Hospital Platform</h1>
+        <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-7 text-center text-lg-start">
-          <p class="fs-5 col-lg-10">Explore medical informatics with hands-on training through our virtual hospital platform. Experience the real EHR system, designed to simulate real hospital workflows. Enhance your learning with tools in a realistic healthcare environment.</p>
+          <p class="fs-5 col-lg-10">Explore the world of medical informatics with OpenMRS, now integrated into the Virtual Hospital platform. Gain hands-on experience with a real EHR system designed to replicate actual hospital workflows. Enhance your learning with immersive tools and simulations in a realistic healthcare environment.</p>
           <a href="" target="_blank" type="button" class="btn btn-outline-primary px-4 me-md-2">Documentation</a>
         </div>
         <div class="col-md-10 mx-auto col-lg-5">
           <a href="" target="_blank">
-            <img class="d-block mx-auto mb-4 img-fluid" src="images/ongoing.png"
+            <img class="d-block mx-auto mb-4 img-fluid" src="images/hospital.png"
             width="100"
             height="100"
             >
