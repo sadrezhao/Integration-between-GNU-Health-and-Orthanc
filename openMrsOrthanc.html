@@ -61,32 +61,26 @@
         <h1 class="display-5 fw-bold text-center">Main module</h1>
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
-            <h2 class="fw-bold lh-1 mb-3">Radiology Module</h2>
+            <h2 class="fw-bold lh-1 mb-3">Imaging Module</h2>
             <p class="fs-5 col-lg-10">
-              We are planning to develop this project to create a new radiology
-              module within the OpenMRS electronic healthcare system. This
-              module aims to simplify the management of imaging data and
-              support workflows in radiology departments. Key features of this module will be:
+              In order to improve the management of patient image data within OpenMRS, the leading open source electronic healthcare system, 
+              we have developed an integration between Orthanc PACS and OpenMRS, initially designed for OpenMRS 2.x, the most widely used version of OpenMRS. 
+              We also plan to update the project for OpenMRS 3.x, the next generation electronic medical record (EMR) system. This new module is focused on 
+              streamlining the management of imaging data and optimizing workflows in radiology departments. Key features of this module include:
             </p>
             <ul>
               <li>
-                FHIR ImagingStudy Resource integration: Implement the FHIR
-                ImagingStudy resource to standardise and expose imaging data via
-                OpenMRS' FHIR server.
+                Set up and configure the local or remote Orthanc server to create a seamless bridge between OpenMRS and the Orthanc PACS system.
               </li>
               <li>
-                PACS connectivity, supporting for both local and remote
-                connections, facilitating access to imaging systems.
+                PACS connectivity, supporting for both local and remote connections, facilitating access to imaging systems.
               </li>
               <li>
-                Visualisation of patient image data: View patient image data
-                using Orthanc's DICOM viewers, providing an interface for image
+                Visualisation of patient image data: View patient image data using Orthanc's DICOM viewers, providing an interface for image
                 preview.
               </li>
               <li>
-                Worklist management in OpenMRS: manage worklist directly within
-                OpenMRS, improving coordination across
-                healthcare teams.
+                Worklist management in OpenMRS: manage worklist directly within OpenMRS, improving coordination across healthcare teams.
               </li>
             </ul>
             <p class="fs-5 col-lg-10">
@@ -101,7 +95,7 @@
               class="btn btn-outline-primary px-4 me-md-2"
               >Documentation</a
             >
-            <!-- <a href="" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">Video</a> -->
+            <a href="" target="_blank" type="button" class="btn btn-primary px-4 me-md-2">Video</a>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
             <a href="" target="_blank">
@@ -110,6 +104,98 @@
                 src="images/ongoing.png"
               />
             </a>
+          </div>
+        </div>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/ongoing.png"
+              />
+            </a>
+          </div>
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Orthanc Server Configuration</h2>
+            <p class="fs-5 col-lg-10">
+              The purpose of this submodule is to establish a connection between
+              the Orthanc server and GNU Health.
+            </p>
+            <a
+              href=""
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
+          </div>
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h2 class="fw-bold lh-1 mb-3">Imaging</h2>
+              <p class="fs-5 col-lg-10">
+                This is the heart of the Orthanc integration, allowing seamless uploading, updating and viewing of patient images 
+                through DICOM viewers available within Orthanc. The synchronization feature retrieves image studies stored in Orthanc, 
+                ensuring up-to-date access to medical data. The patient identifier mapping functionality links patient names to their metadata 
+                stored in Orthanc, eliminating potential discrepancies when data is captured in different locations during the image matching process. 
+                In addition, image data can be uploaded directly from the OpenMRS client to the Orthanc server for a streamlined workflow.
+              </p>
+              <a
+                href="docs/gnuhealthradiology.pdf#page=11"
+                target="_blank"
+                type="button"
+                class="btn btn-outline-primary px-4 me-md-2"
+                >Documentation</a
+              >
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <a href="docs/gnuhealthradiology.pdf#page=18" target="_blank">
+                <img
+                  class="d-block mx-auto mb-4 img-fluid"
+                  src="images/ongoing.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <a href="" target="_blank">
+              <img
+                class="d-block mx-auto mb-4 img-fluid"
+                src="images/ongoing.png"
+              />
+            </a>
+          </div>
+          <div class="col-lg-7 text-center text-lg-start">
+            <h2 class="fw-bold lh-1 mb-3">Radiology Worklist (Next)</h2>
+            <p class="fs-5 col-lg-10">
+              In the context of radiology, a worklist is a list of imaging studies or tasks that a radiologist needs to interpret, 
+              review, or analyze. These tasks are typically retrieved from a radiology information system (RIS), a specialized database 
+              that manages patient and imaging information. However, in situations where an RIS system is not available or feasible 
+              (such as for smaller healthcare facilities, clinics, or specific locations), a simple radiology worklist can be implemented 
+              as part of a web-based solution to streamline the process. Key Features of a Simple Web-Based Radiology Worklist:
+            </p>
+            <ul>
+              <li>
+                User Interface(UI): Display all tasks or studies assigned to the radiologists. Highlighting features for unread, urgent, or pending tasks.
+              </li>
+              <li>
+                Task Magagement: Allows radiologists to mark tasks as "in progress," "completed," or "pending review.
+              </li>
+              <li>
+                Integration with External Systems: The worklist integrates seamlessly with other systems, such as the Picture Archiving and Communication System (PACS), 
+                to retrieve and display image files associated with each study.
+              </li>
+              <li>
+                Access Control and Security: Implement role-based access control (RBAC) integrated with OpenMRS to ensure that only authorized radiologists have access to the worklist and associated data. 
+                This approach maintains strict security protocols to protect sensitive information and maintain confidentiality at all times.
+              </li>
+            </ul>
+            <a
+              href=""
+              target="_blank"
+              type="button"
+              class="btn btn-outline-primary px-4 me-md-2"
+              >Documentation</a
+            >
           </div>
         </div>
       </div>
