@@ -60,7 +60,7 @@ New features for managing the image data
 
 The following shows the outcome of the integration between GNU Health and Orthanc:
 
-.. image:: images/Integration_result.png
+.. image:: images/gnuhealth/Integration_result.png
     :width: 430
     :height: 240
     :align: center
