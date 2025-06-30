@@ -1,1 +1,1 @@
-# Integration-between-GNU-Health-and-Orthanc
+# Integration HIS/EHR with Orthanc
